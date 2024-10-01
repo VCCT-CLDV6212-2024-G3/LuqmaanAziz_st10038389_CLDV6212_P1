@@ -92,6 +92,59 @@ Screenshot of UploadBlob.cs:
 ----------------------------
 ![image](https://github.com/user-attachments/assets/8225941b-5b0d-4012-8d67-46af2e3f29d9)
 
+Written Answers for Discussion Questions:
+B. Using Services for improving the Customer Experience:
+Discuss how the following services could add value to the customer experience in your app:
+•	Azure Event Hubs
+•	Azure Event Bus
+Answer: Azure Event Hubs
+Description of the Service: 
+•	Millions of events may be processed per second by Azure Event Hubs, a fully managed real-time data input solution. Due to its capacity to manage massive amounts of data from several sources, applications can receive, process, and analyse the data instantly.
+Mechanism:
+•	Partitioning
+Regarding scalability and high availability, it dynamically divides inbound events. Events can be processed simultaneously since each split can be handled independently.
+•	Customer Divisions 
+Through consumer groups, many consumer applications can independently read the same event stream, allowing different applications to respond differently to the same events. 
+•	Holding On 
+Applications can reprocess past data as needed by allowing events to be kept for a configurable amount of time. 
+
+
+
+Value to End Users:
+1.	Real-time Insights
+•	Users can obtain real-time insights into their application's performance, user behaviour, and other crucial data by ingesting and processing events.
+2.	Scalability
+•	Capable of managing enormous volumes of data, applications can expand without experiencing a decrease in speed, improving user experience even under heavy loads.
+3.	Data Integration: 
+•	Event Hubs enables data integration with other Azure services (such as Azure Functions or Azure Stream Analytics) to deliver machine learning and analytics-driven enriched user experiences.
+4. Higher Interaction
+The instantaneous application responses to user activities, including purchasing, logging in, or other interactions, make for a more engaging user experience. 
+Answer: Azure Event Bus
+Description of the Service
+•	Azure Service Bus is an enterprise message gateway that is completely managed and enables message-based communication between applications.
+Mechanism:
+Topics and Queues
+•	Service Bus routes messages effectively by using topics with subscriptions for publish/subscribe scenarios and queues for point-to-point communication.
+
+•	Delivery of Messages
+The system guarantees reliable message delivery by providing transactional messaging and at-least-once options for delivery, which prevent communications from being lost.
+Message Routing
+•	To provide subscribers with precise control over which messages are sent to which ones, Service Bus offers complex message routing functionalities like filtering and algorithms.
+Integration
+•	Its smooth integration allows for increased cross-platform communication and usefulness with a variety of Azure services and on-premises systems.
+Value to End Users:
+1.	Reliable Communication
+•	Reliability in message delivery implies fewer glitches and service disruptions for users, which increases their satisfaction and confidence in the program.
+2.	Asynchronous Processing
+•	Asynchronous processing yields faster response times and more seamless user interactions by allowing actions to be queued and processed without requiring users to wait.
+3.	Enhanced Features
+•	Complex workflows and notifications that can be implemented can result in richer user experiences, like alerts, order confirmations, and system changes that keep users informed and involved.
+4. separated Buildings
+This allows services to be separately designed, deployed, and scaled, rendering systems more flexible and able to shift as user needs do.
+
+
+
+
 Screenshot of UploadFile.cs:
 ----------------------------
 ![image](https://github.com/user-attachments/assets/bbd6ea40-d680-4ee0-9d29-33d797527181)
